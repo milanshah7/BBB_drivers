@@ -1,0 +1,25 @@
+/***************************************
+
+* Name          : README
+* Created on    : Wednesday 27 January 2021 04:29:04 PM 
+* Last Modified : 
+* Created By    : Milan Shah <milan.opensource@gmail.com> 
+* Description   : This file gives general information about the connection
+                  between the 7segment display and beaglebone black.
+
+****************************************/
+
+/*
+===============================================================================
+BBB_expansion_header_P8_pins      GPIO number           7Seg Display segment
+===============================================================================
+P8.7                               GPIO_66                    a
+P8.8                               GPIO_67                    b
+P8.9                               GPIO_69                    c
+P8.10                              GPIO_68                    h //decimal point
+P8.11                              GPIO_45                    d
+P8.12                              GPIO_44                    e
+P8.14                              GPIO_26                    f
+P8.16                              GPIO_46                    g
+===============================================================================
+*/
