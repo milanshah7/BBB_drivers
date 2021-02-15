@@ -1,0 +1,13 @@
+/ {
+    7seg_display {
+        compatible = "7_segment";
+        7seg-gpios = <&gpio0 26 GPIO_ACTIVE_HIGH>,
+                     <&gpio1 12 GPIO_ACTIVE_HIGH>,
+                     <&gpio1 13 GPIO_ACTIVE_HIGH>,
+                     <&gpio1 14 GPIO_ACTIVE_HIGH>,
+                     <&gpio2 2 GPIO_ACTIVE_HIGH>,
+                     <&gpio2 3 GPIO_ACTIVE_HIGH>,
+                     <&gpio2 4 GPIO_ACTIVE_HIGH>,
+                     <&gpio2 5 GPIO_ACTIVE_HIGH>;
+    };
+};
