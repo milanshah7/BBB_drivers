@@ -10,6 +10,9 @@
 #include <linux/init.h>
 #include <linux/module.h>
 #include <linux/platform_device.h>
+#include <linux/gpio.h>
+#include <linux/of_device.h>
+#include <linux/gpio/consumer.h>
 
 #include "7seg_display.h"
 
@@ -37,19 +40,19 @@ static struct of_device_id seg_of_mtable[] = {
 
 MODULE_DEVICE_TABLE(of, seg_of_mtable);
 
-static struct platform_driver seg_driver{
+static struct platform_driver seg_driver = {
         .driver = {
-                .name = MODULE_NAME;
-                .owner = THIS_MODULE;
-                .of_match_table = seg_of_mtable;
-        };
-        .probe = seg_probe;
-        .remove = seg_remove;
+                .name = MODULE_NAME,
+                .owner = THIS_MODULE,
+                .of_match_table = seg_of_mtable,
+        },
+        .probe = seg_probe,
+        .remove = seg_remove,
 
 };
 
 module_platform_driver(seg_driver);
 
-MODULE_AUTHOR("Milan Shah <milan.opensource@gmail.com>")
-MODULE_DESCRIPTION("7 segment Display Driver")
-MODULE_LICENSE("GPL")
+MODULE_AUTHOR("Milan Shah <milan.opensource@gmail.com>");
+MODULE_DESCRIPTION("7 segment Display Driver");
+MODULE_LICENSE("GPL");

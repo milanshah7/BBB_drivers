@@ -10,12 +10,6 @@
 #define HIGH          1
 #define LOW           0
 
-#define GPIO_DIR_OUT        HIGH
-#define GPIO_DIR_IN         LOW
-
-#define GPIO_LOW_VALUE      LOW
-#define GPIO_HIGH_VALUE     HIGH
-
 #define SEGMENT_ON          HIGH
 #define SEGMENT_OFF         LOW
 
