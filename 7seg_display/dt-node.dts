@@ -1,0 +1,17 @@
+/dts-v1/;
+/plugin/;
+/ {
+        compatible = "ti, am33xx";
+
+    7seg_display {
+        compatible = "Beaglebone, 7_segment";
+        7seg-gpios = <&gpio0 26>,
+                     <&gpio1 12>,
+                     <&gpio1 13>,
+                     <&gpio1 14>,
+                     <&gpio2 2>,
+                     <&gpio2 3>,
+                     <&gpio2 4>,
+                     <&gpio2 5>;
+    };
+};
