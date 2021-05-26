@@ -1,17 +1,50 @@
 /dts-v1/;
 /plugin/;
 / {
-        compatible = "ti, am33xx";
 
     7seg_display {
+
         compatible = "Beaglebone, 7_segment";
-        7seg-gpios = <&gpio0 26>,
-                     <&gpio1 12>,
-                     <&gpio1 13>,
-                     <&gpio1 14>,
-                     <&gpio2 2>,
-                     <&gpio2 3>,
-                     <&gpio2 4>,
-                     <&gpio2 5>;
+
+	gpio1 {
+		label = "segment_a";
+		7seg-gpios = <&gpio2 2 1>;
+	};
+
+	gpio2 {
+		label = "segment_b";
+		7seg-gpios = <&gpio2 3 1>;
+	};
+
+	gpio3 {
+		label = "segment_c";
+		7seg-gpios = <&gpio2 5 1>;
+	};
+
+	gpio4 {
+		label = "segment_d";
+		7seg-gpios = <&gpio1 13 1>;
+	};
+
+	gpio5 {
+		label = "segment_e";
+		7seg-gpios = <&gpio1 12 1>;
+	};
+
+	gpio6 {
+		label = "segment_f";
+		7seg-gpios = <&gpio0 26 1>;
+	};
+
+	gpio7 {
+		label = "segment_g";
+		7seg-gpios = <&gpio1 14 1>;
+	};
+
+	gpio8 {
+		label = "dp";
+		7seg-gpios = <&gpio2 4 1>;
+	};
+
     };
 };
